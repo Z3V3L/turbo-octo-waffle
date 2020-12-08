@@ -1,0 +1,386 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: 40px auto;
+    padding: 50px;
+    /* CSS3  */
+    box-sizing: border-box;
+    /*border-radius: 20px;*/
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Colors */
+body#colors {
+    background: rgba(24, 40, 82, 0.85); /* The "alpha channel" is how transparent the color is */
+    color: white;
+}
+
+#colors #container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#colors #box {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 70px;
+    /*background: linear-gradient(115deg, red, blue); /* or 'linear-gradient(to bottom right, red, blue);'  */
+    background: radial-gradient( red 43%, blue , red , blue , red, blue, red, blue);
+    border-radius: 100px;
+}
+
+
+/* Shadows */
+
+#shadows #container {
+    width: 600px;
+    margin: 40px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #cc9c00;
+}
+
+#shadows h1 {
+    color: white;
+    text-shadow: 8px 4px 2px #0000004f, -8px 4px 10px rgba(255, 0, 255, 0.7);
+}
+
+#shadows #container {
+    box-shadow: 0px 20px 10px -15px rgba(0, 0, 0, 0.5);
+}
+
+
+/* CSS3 Columns */
+
+#columns {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+
+    -moz-column-gap: 50px;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+
+    -moz-column-rule-style: solid;
+    -webkit-column-rule-style: solid;
+    column-rule-style: solid;
+
+    -moz-column-rule-width: 5px;
+    -webkit-column-rule-width: 5px;
+    column-rule-width: 5px;
+
+    -moz-column-rule-color: gray;
+    -webkit-column-rule-color: gray;
+    column-rule-color: gray;
+}
+
+
+/* Animations & Transitions */
+
+@keyframes box {
+    from {background-color: red; top: 0; left: 0;}     /* or "from=0%" and "to=100%" */
+    to {background-color: blue; top: 100px; left: 100px;}
+}
+
+#animations #box {
+    position: relative;
+    /*animation-name: box;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+
+    animation: box 1s ease-in 0s infinite alternate;
+}
+
+#animations #box2 {
+    background-color: blue;
+    color: white;
+    margin: 40px 15vmin;
+    padding: 50px;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    transition: padding 1.5s, background-color 1.5s, height 1s, width 2.5s;
+}
+
+#animations #box2:hover {
+    background-color: green;
+    color: white;
+    margin: 40px 15vmin;
+    padding: 25px;
+    height: 100px;
+    width: 150px;
+    box-sizing: border-box;
+    transition: all 1.5s, width 1s, height 2.5s;
+}
+
+
+/* Orbit animation */
+
+@-o-keyframes starPulse {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+@-ms-keyframes starPulse {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+@-moz-keyframes starPulse {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+@-webkit-keyframes starPulse {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+@keyframes starPulse {
+    from {opacity: 1;}
+    to {opacity: 0.2;}
+}
+
+@-webkit-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #ff9900;
+        -moz-box-shadow: 0 0 50px #ff9900;
+        -ms-box-shadow: 0 0 50px #ff9900;
+        -o-box-shadow: 0 0 50px #ff9900;
+        box-shadow: 0 0 50px #ff9900;
+    }
+    to {
+        -webkit-box-shadow: 0 0 80px #ff9900;
+        -moz-box-shadow: 0 0 80px #ff9900;
+        -msbox-shadow: 0 0 80px #ff9900;
+        -o-box-shadow: 0 0 80px #ff9900;
+        box-shadow: 0 0 80px #ff9900;
+    }
+}
+@-moz-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #ff9900;
+        -moz-box-shadow: 0 0 50px #ff9900;
+        -ms-box-shadow: 0 0 50px #ff9900;
+        -o-box-shadow: 0 0 50px #ff9900;
+        box-shadow: 0 0 50px #ff9900;
+    }
+    to {
+        -webkit-box-shadow: 0 0 80px #ff9900;
+        -moz-box-shadow: 0 0 80px #ff9900;
+        -msbox-shadow: 0 0 80px #ff9900;
+        -o-box-shadow: 0 0 80px #ff9900;
+        box-shadow: 0 0 80px #ff9900;
+    }
+}
+@-ms-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #ff9900;
+        -moz-box-shadow: 0 0 50px #ff9900;
+        -ms-box-shadow: 0 0 50px #ff9900;
+        -o-box-shadow: 0 0 50px #ff9900;
+        box-shadow: 0 0 50px #ff9900;
+    }
+    to {
+        -webkit-box-shadow: 0 0 80px #ff9900;
+        -moz-box-shadow: 0 0 80px #ff9900;
+        -msbox-shadow: 0 0 80px #ff9900;
+        -o-box-shadow: 0 0 80px #ff9900;
+        box-shadow: 0 0 80px #ff9900;
+    }
+}
+@-o-keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #ff9900;
+        -moz-box-shadow: 0 0 50px #ff9900;
+        -ms-box-shadow: 0 0 50px #ff9900;
+        -o-box-shadow: 0 0 50px #ff9900;
+        box-shadow: 0 0 50px #ff9900;
+    }
+    to {
+        -webkit-box-shadow: 0 0 80px #ff9900;
+        -moz-box-shadow: 0 0 80px #ff9900;
+        -msbox-shadow: 0 0 80px #ff9900;
+        -o-box-shadow: 0 0 80px #ff9900;
+        box-shadow: 0 0 80px #ff9900;
+    }
+}
+@keyframes sunFire {
+    from {
+        -webkit-box-shadow: 0 0 50px #ff9900;
+        -moz-box-shadow: 0 0 50px #ff9900;
+        -ms-box-shadow: 0 0 50px #ff9900;
+        -o-box-shadow: 0 0 50px #ff9900;
+        box-shadow: 0 0 50px #ff9900;
+    }
+    to {
+        -webkit-box-shadow: 0 0 80px #ff9900;
+        -moz-box-shadow: 0 0 80px #ff9900;
+        -msbox-shadow: 0 0 80px #ff9900;
+        -o-box-shadow: 0 0 80px #ff9900;
+        box-shadow: 0 0 80px #ff9900;
+    }
+}
+
+@-webkit-keyframes spin{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@-ms-keyframes spin{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@-o-keyframes spin{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@keyframes spin{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#universe {
+    background: black;
+    background: -webkit-radial-gradient(#555, #000);
+    background: -moz-radial-gradient(#555, #000);
+    background: -o-radial-gradient(#555, #000);
+    background: radial-gradient(#555, #000);
+
+}
+
+#stars {
+    position: relative;
+    z-index: 0;
+    background: url(CSS3_files/CSS3/images/stars.png);
+    width: 100%;
+    height: 100%;
+
+    -webkit-animation: starPulse 1s infinite alternate;
+    -moz-animation: starPulse 1s infinite alternate;
+    -ms-animation: starPulse 1s infinite alternate;
+    -o-animation: starPulse 1s infinite alternate;
+    animation: starPulse 1s infinite alternate;
+}
+
+#sun {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    background: orange;
+    background: -webkit-radial-gradient(#ffff56, #ff5100);
+    background: -moz-radial-gradient(#ffff56, #ff5100);
+    background: -o-radial-gradient(#ffff56, #ff5100);
+    background: radial-gradient(#ffff56, #ff5100);
+
+    box-shadow: 0 0 50px #ff9900;
+
+    -webkit-animation: sunFire 1s infinite alternate;
+    -moz-animation: sunFire 1s infinite alternate;
+    -ms-animation: sunFire 1s infinite alternate;
+    -o-animation: sunFire 1s infinite alternate;
+    animation: sunFire 1s infinite alternate;
+}
+
+#earthOrbit {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    height: 700px;
+    width: 600px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    -ms-animation: spin 30s linear infinite;
+    -o-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+}
+
+#earth {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -40px;
+
+    -webkit-animation: spin 3s linear infinite reverse;
+    -moz-animation: spin 3s linear infinite reverse;
+    -ms-animation: spin 3s linear infinite reverse;
+    -o-animation: spin 3s linear infinite reverse;
+    animation: spin 3s linear infinite reverse;
+}
+
+#moonOrbit {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -20px;
+    margin-top: -60px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    -ms-animation: spin 4s linear infinite;
+    -o-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+#moon {
+    height: 20px;
+    width: 20px;
+
+    background: gray;
+    background: -webkit-radial-gradient(#ddd, #888);
+    background: -moz-radial-gradient(#ddd, #888);
+    background: -ms-radial-gradient(#ddd, #888);
+    background: -o-radial-gradient(#ddd, #888);
+    background: radial-gradient(#ddd, #888);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}

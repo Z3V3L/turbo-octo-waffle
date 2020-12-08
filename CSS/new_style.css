@@ -1,0 +1,57 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Styling links */
+
+#styling-links {
+    background: #333;
+}
+
+#styling-links #container {
+    background: white;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+a {
+    display: inline-block;
+}
+
+/* unvisited */
+a:link {
+    color: #fc3;
+}
+
+/* visited */
+a:visited {
+    color: #fc3;
+}
+
+/* hovered */
+a:hover {
+    color: white;
+}
+
+/* active */
+a:active {
+    color: black;
+}
+
+
+a#link-1:link {
+    background: gray;
+    padding: 10px;
+    text-decoration: none;
+}
+a#link-1:hover {
+    background: #fcc;
+}
+
+a#link-1:active {
+    background: darkslategray;
+}

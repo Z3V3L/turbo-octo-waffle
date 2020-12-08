@@ -1,0 +1,92 @@
+/* Text formatting with CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+body {
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #373737;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: bold;
+
+    /* 
+        Note
+
+        There are: 
+            >bolder
+            >lighter
+    
+        The following are equivalent to "normal"
+        - 100
+        - 200
+        - 300
+        - 400
+
+        The following are equivalent to "bold"
+        - 500
+        - 600
+        - 700
+
+        For heavier weights (Not supported in all fonts)
+        - 800
+        - 900
+    */
+}
+
+h1 {
+    font-size: 3.6em; /* 3.6x the base font size (18px) */
+}
+
+h2 {
+    font-size: 2.6em; /* 2.6x the base font */
+}
+
+h3 {
+    font-size: 1.6em; /* 1.6x the base font */
+    letter-spacing: -1px; /* Can be normal or a numeral positive or negative value */
+    text-indent: 80px; /* Indents the first line of the paragraph. Can be a numerical value or % */
+    line-height: 2.3; /* This is 2.3x the height of the font-size. You can also use "px", "em" or % */
+}
+
+span {
+    text-decoration: line-through; /* You can use "underline", "overline", "line-through" and "none". But underlines are usually just for links */
+}
+
+em {
+    text-transform: uppercase; /* You can also use "lowercase", "capitalize" and "none" */
+}
+
+strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/*  CSS Borders Lecture  */
+
+.border-box {
+    background: #fc3;
+    margin: 0 0 20px;
+    padding: 40px;
+    width: 360px;
+    text-align: center;
+}
+
+#box1 { border: solid 1px black; }
+#box2 { border: dashed 1px black; }
+#box3 { border: dotted 1px black; }
+#box4 { border: double 3px black; }
+#box5 { border: solid 4px black; }
+#box6 { border: dashed 4px black; }
+#box7 { border: dotted 4px black; }
+#box8 { border: double 6px black; }

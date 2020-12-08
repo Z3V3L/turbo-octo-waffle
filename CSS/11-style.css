@@ -1,0 +1,116 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: darkslategray;
+}
+
+#container {
+    width: 500px;
+    margin: 40px auto;
+}
+
+/* CSS floats */
+
+#floats {
+    background: #a51818;
+}
+
+#floats #container {
+    width: 600px;
+    background: white;
+    padding: 20px;
+}
+
+#brad-1 {
+    float: right;
+    margin: 0 0px 10px 14px;
+}
+
+#main-column p{
+    width: 320px;
+    padding: 20px;
+    float: left;
+    background: #555;
+    color: white;
+}
+
+#sidebar p{
+    width: 180px;
+    padding: 20px;
+    float: right;
+    background: #fc3;
+}
+
+#footer {
+    clear: both;
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#box-2 {
+    clear: right;
+}
+
+/*
+To fix the container to the correct height
+
+.clear {
+    clear: both;
+}
+*/
+
+/* with ":after" we are creating an invisible element before the closing tag of the div */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* CSS Positioning */
+
+#positioning h1 {
+    font-size: 36px;
+}
+
+#positioning {
+    background: #295da1;
+}
+
+#positioning #container {
+    background: white;
+    padding: 40px;
+    height: 1000px;
+}
+
+.box {
+    background: #a51818;
+    color: aliceblue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#relative {
+    position: relative;
+    top: -30px;
+    left: -50px;
+}
+
+#absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

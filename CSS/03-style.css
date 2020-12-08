@@ -1,0 +1,103 @@
+body {
+    background-color: #b15050;
+    color: #333;
+}
+
+body#page-4 {
+    background-color: white;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+ol {
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+
+/* Styles for IDs & Classes */
+
+#main-title {
+    color: yellowgreen;
+    background: #b15050;
+    padding: 15px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.class-1 {
+    color: #b15050;
+    padding: 30px 50px 10px;
+    margin: 30px;
+    border: solid 3px yellowgreen;
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*   Descendant selectors class   */
+
+.cosa-1 {
+
+    background-color: teal;
+    border: solid 5px black;
+    padding: 0 20px;
+    
+}
+
+.cosa-1 p {
+
+    font-size: 1.2em;
+    font-style: normal;
+
+}
+
+.cosa-1 p em {
+    
+    color: wheat;
+
+}
+
+.cosa-2 {
+
+    background-color: black;
+    color: #b15050;
+    border: solid 5px teal;
+    margin: 10px 0;
+    padding: 0 20px;
+
+}
+
+.cosa-2 p {
+
+    font-size: 1e.2m;
+    
+}
+
+
+/* Grouping selectors lecture */
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    border-bottom: solid 3px black;
+}
+
+#mainContainer {
+    width: 960px;
+    margin: 0 auto;
+}

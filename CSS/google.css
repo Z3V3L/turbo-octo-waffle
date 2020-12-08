@@ -1,0 +1,126 @@
+/* Fake Google CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: small; /*13px*/
+}
+
+h1#logo {
+    width: 272px;
+    margin: 0 auto;
+    height: 92px;
+    background: url("googlelogo_color_272x92dp.png") top left no-repeat;
+    background-size: 100%;
+    text-indent: -9999px;
+}
+
+#container {
+    width: 450px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 8px 19px;
+    margin: 20px 0;
+    border: solid 1px #cccccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+input[type="search"]:hover {
+    border-color: #aaa;
+}
+
+input[type="submit"] {
+    background: #f2f2f2;
+    color: #5F6368;
+    border: solid 1px #f2f2f2;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 36px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+p {
+    line-height: 44px;
+}
+
+p a:link {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+p a:visited {
+    color: #609;
+}
+
+p a:hover {
+    color: #1a0dab;
+    text-decoration: underline;
+}
+
+nav#header{
+    text-align: right;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav#header ul li a:link,
+nav#header ul li a:visited {
+    color: #000000de;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav#header ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #f2f2f2;
+    font-size: 14px;
+    border-top: solid 1px #e4e4e4;
+
+    /*line-height: 40px;*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav ul li a:link,
+footer nav ul li a:visited {
+    color: #5F6368;
+    text-decoration: none;
+    padding: 10px;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer nav ul {
+    float: left;
+    padding: 12px;
+}
+
+.right-links {
+    float: right;
+}

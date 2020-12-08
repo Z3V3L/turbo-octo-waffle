@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 10px 20px;
+}
+
+#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 40px;
+    border: solid 1px #aaa;
+    background: url('Course_files/images/blue_background.jpg');
+}
+
+fieldset legend {
+    background: white;
+    padding: 10px;
+    border: solid 1px #aaa;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 2%;
+    margin: 0 0 20px;
+    border: solid 1px #454545;
+    border-top: none;
+    display: block;
+    width: 50%;
+    font-size: 14px;
+    color: #777;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+textarea {
+    resize: none;
+}
+
+label {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: url('Course_files/images/red_background.jpg');
+    display: block;
+    width: 50%;
+    padding: 2% 2.3% 2% 2%;
+    color: white;
+}
+
+input[type="submit"] {
+    background: none;
+    background: url("Course_files/images/button_background.jpg") repeat-x;
+    height: 40px;
+    border: solid 1px #777;
+    padding: 0 40px;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    border-color: #454545;
+}
+
+input[type="submit"]:active {
+    border-color: black;
+    outline-color: red;
+}
+
