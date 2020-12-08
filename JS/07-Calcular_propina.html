@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora de propinas</title>
+
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <div id="container">
+            <h1>Calculadora de propinas</h1>
+
+            <div id="calculator">
+                <form action="">
+                    <label for="billAmount">
+                        ¿De cuánto fue la cuenta?<br>
+                        $ <input type="text" id="billAmount">
+                    </label>
+
+                    <br>
+
+                    <label for="serviceQuality">
+                        ¿Cómo estuvo el servicio?<br>
+                        <select id="serviceQuality">
+                            <option disabled selected value="0">-- Elige una opción --</option>
+
+                            <option value="0.2">20% - Impresionante</option>
+                            <option value="0.15">15% - Bueno</option>
+                            <option value="0.1">10% - Meh</option>
+                            <option value="0.05">5% - Malo</option>
+                        </select>
+                    </label>
+
+                    <br>
+
+                    <label for="personas">
+                        ¿Cuantas personas compartirán la cuenta?<br>
+                        <input type="text" id="personas"> personas
+                    </label>
+
+                    <br>
+
+                    <button type="button" id="calcular">¡Calcular!</button>
+                </form>
+            </div><!-- #calculator -->
+
+            <div id="total">
+                <sup>$</sup><span id="tip">0.00</span>
+                <small id="cadaQuien">cada quien</small>
+            </div>
+
+        </div><!-- #container -->
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>

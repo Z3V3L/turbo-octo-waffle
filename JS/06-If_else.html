@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>If / Else</title>
+
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+    </head>
+
+    <body>
+
+        <h1>If / Else</h1>
+
+        <div id="box1"></div>
+
+        <script type="text/javascript">
+
+            var age = 18;
+
+            if(age < 18) {
+                document.getElementById("box1").innerHTML = "You're stil young";
+                document.getElementById("box1").style.color = "red";
+            } else if (age == 18) {
+                document.getElementById("box1").innerHTML = "Hmmmmmmmm. Okay, go in";
+                document.getElementById("box1").style.color = "blue";
+            } else {
+                document.getElementById("box1").innerHTML = "Alright go in";
+                document.getElementById("box1").style.color = "green";
+            }
+
+        </script>
+
+    </body>
+</html>
