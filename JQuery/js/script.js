@@ -97,6 +97,16 @@ $(function() {
     $('button').click(function() {
         $('#box1').slideToggle();
     });
-    
+
+    /* ----------------
+        jQUERY ANIMATE
+       ---------------- */
+       
+    $('.box').animate({
+
+    }, function() {
+        
+    });
+
 });
 
