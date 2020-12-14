@@ -45,5 +45,43 @@
 
    let nombre = "Fernando";
 
-   frase1 = `<br><br> Hola, soy ${nombre} y estoy programando`; //las (``) Backticks son las más versátiles para concatenar.
+   frase1 = `<br><br> Hola, soy ${nombre} y estoy programando<br><br>`; //las (``) Backticks son las más versátiles para concatenar.
    document.write(frase1);
+
+
+/* ------------
+    Operadores
+   ------------  */
+
+   /*
+   En Javascript tenemos operadores lógicos y de comparación, siendo los de comparación: 
+        "==",       -Igual que  (No compara el tipo de dato)
+        "===",      -Estrictamente igual que  (Sí compara el tipo de dato)
+        "!=",       -Diferente que
+        "!==",      -Estrictamente diferente que
+        "<",        -Menor que
+        ">",        -Mayor que
+        "<="        -Menor o igual que
+        ">=".       -Mayor o igual que
+
+   Y los lógicos: 
+        AND = "&&",  
+        OR = "||", 
+        NOT = "!".
+
+   Los operadores de comparación al realizar operaciones regresan datos de tipo booleano, con el cual los operadores lógicos pueden trabajar.
+   */
+
+   let x = 5;
+   let y = 6;
+   let xt = "5";
+   let yt = "6";
+
+
+   document.write(x == xt);
+   document.write("<br>");
+
+   document.write(x === xt);
+   document.write("<br>");
+
+   document.write(x == xt && x === xt);
