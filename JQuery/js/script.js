@@ -138,5 +138,29 @@ $(function() {
         });
     });
 
+
+    /* -------------
+        jQUERY RACE
+       ------------- */
+
+    $('#go').click(function() {
+
+        //get the width of the cars
+        var carWidth = $('#car1').width(); 
+
+        //get the width of the racetrack
+        var raceTrackWidth = $(window).width() - carWidth;
+
+        //Generate a random number between 1 and 5000
+        var raceTime1 = Math.floor( (Math.random() * 5000) +1);
+        var raceTime2 = Math.floor( (Math.random() * 5000) +1);
+
+        //set a flago variable to FALSE
+        var isComplete = false;
+
+        var place = 'first';
+
+    });
+
 });
 
