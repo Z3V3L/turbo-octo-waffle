@@ -139,6 +139,7 @@ $(function() {
     });
 
 
+<<<<<<< HEAD
     /* -------------
         jQUERY RACE
        ------------- */
@@ -161,6 +162,21 @@ $(function() {
         var place = 'first';
 
     });
+=======
+    /* ------------
+        jQUERY CSS
+       ------------ */
+
+    $('#circle2').css({
+        'background': '#8a8d22', 
+        'display': 'inline-block',
+        'color': 'white',
+        'text-align': 'center',
+        'line-height': '140px',
+        'height': '140px',
+        'width': '140px'
+    }).addClass('circleShape');
+>>>>>>> 41edc3b5e8e694a13f77b27308d42002d4efb5e2
 
 });
 
