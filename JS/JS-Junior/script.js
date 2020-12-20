@@ -85,3 +85,12 @@
    document.write("<br>");
 
    document.write(x == xt && x === xt);
+
+
+/* ---------------
+    Condicionales
+   ---------------  */
+
+   /*
+   "If", "else if" y "else" de toda la vida, solo recordar usar else if en conjunto con "if" para ahorrar recursos.    
+   */ 

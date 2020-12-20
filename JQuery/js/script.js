@@ -138,5 +138,20 @@ $(function() {
         });
     });
 
+
+    /* ------------
+        jQUERY CSS
+       ------------ */
+
+    $('#circle2').css({
+        'background': '#8a8d22', 
+        'display': 'inline-block',
+        'color': 'white',
+        'text-align': 'center',
+        'line-height': '140px',
+        'height': '140px',
+        'width': '140px'
+    }).addClass('circleShape');
+
 });
 
