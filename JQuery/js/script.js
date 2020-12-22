@@ -160,6 +160,17 @@ $(function() {
 
     $('#go').click(function() {
 
+
+        //Función para verificar cuando un carro gane
+        function CheckIfComplete() {
+            if( isComplete == false) {
+                isComplete = true;
+            } else {
+                place = 'second';
+            }
+        }
+
+
         //get the width of the cars
         var carWidth = $('#car1').width(); 
 
@@ -175,7 +186,53 @@ $(function() {
 
         var place = 'first';
 
+        //Animación de car1
+        $('#car1').animate({
+
+            //Mover al final del camino
+            left: raceTrackWidth
+
+        }, raceTime1, function() {
+
+            //animation complete
+
+            //Correr funcion de verificación
+            CheckIfComplete();
+
+            $('#raceInfo1 span').text('Finished in ' + place + ' place and clocked in at ' + raceTime1 + ' miliseconds!');
+
+        });
+
+
+        //Animación de car2
+        $('#car2').animate({
+
+            //Mover al final del camino
+            left: raceTrackWidth
+
+        }, raceTime2, function() {
+
+            //animation complete
+
+            //Correr funcion de verificación
+            CheckIfComplete();
+
+            $('#raceInfo2 span').text('Finished in ' + place + ' place and clocked in at ' + raceTime2 + ' miliseconds!');
+
+        });
+
+
     });
+
+
+    $('#reset').click(function () {
+        $('.car').css('left', '0');
+        $('.raceInfo span').text('');
+    });
+
+
+
+    
 
 });
 
