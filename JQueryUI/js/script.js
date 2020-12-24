@@ -24,5 +24,11 @@ $(function() {
     });
 
 
+    // SORTABLE
+
+    $('#sortable').sortable({ connectWith: "#sortableToo", placeholder: "placeholderBox" });
+
+    $('#sortableToo').sortable({ connectWith: "#sortable" });
+
 });
 
