@@ -30,5 +30,10 @@ $(function() {
 
     $('#sortableToo').sortable({ connectWith: "#sortable" });
 
+
+    // Accordion
+
+    $('#accordion').accordion({collapsible: true, heightStyle: 'content'});
+
 });
 
