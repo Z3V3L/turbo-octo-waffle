@@ -35,5 +35,19 @@ $(function() {
 
     $('#accordion').accordion({collapsible: true, heightStyle: 'content'});
 
+
+    // Datepicker
+
+    $('.date').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        showButtonPanel: true,
+        changeMonth: true,
+        changeYear: true,
+        numberOfMonths: 2,
+        minDate: "-1w -3d", // "-1w", "-1d", "-1y"
+        maxDate: "+1w"
+    });
+
 });
 
