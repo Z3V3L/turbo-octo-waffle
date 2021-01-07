@@ -20,6 +20,8 @@
 
     alert(numero--);//Ahora da 4, y en el futuro alert sería 3, porque la operación la realiza luego de mostrar la alerta.
 
+    alert(numero); // Aquí da 3.
+
     numero1 = 10;
 
     numero2 = 3;
