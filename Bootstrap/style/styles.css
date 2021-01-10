@@ -1,0 +1,10 @@
+/* styles.css */
+
+body {
+    background: #eee;
+}
+
+.subrayado {
+    background-color: pink;
+    border: 1px solid blue;
+}

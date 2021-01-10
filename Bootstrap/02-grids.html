@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Grids</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="style/normalize.css">
+        <link rel="stylesheet" href="style/styles.css">
+    </head>
+
+    <body>
+
+        <div class="container"> <!-- 'container-fluid' para no tener padding -->
+
+            <div class="row">
+                <h1 class="col">Hello world</h1>
+            </div>
+
+            <div class="row row-cols-2">
+                <div class="col subrayado">8 columnas</div>
+                <div class="col subrayado">4 columnas</div>
+
+                <div class="col-7 col-sm-8 subrayado">8* columnas</div>
+                <div class="col-5 col-sm-4 subrayado">4* columnas</div>
+            </div>
+
+            <!--<div class="row">
+                <div class="col-7 col-sm-8 subrayado">8* columnas</div>
+                <div class="col-5 col-sm-4 subrayado">4* columnas</div>
+            </div>-->
+
+
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                  <div class="col">Column</div>
+                  <div class="col">Column</div>
+                  <div class="col">Column</div>
+                  <div class="col">Column</div>
+                </div>
+              </div>
+
+
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
