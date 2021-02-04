@@ -34,7 +34,7 @@
             
             <!-- Modal -->
             <div class="modal fade" id="Modal" tabindex="-1">
-                <div class="modal-dialog">
+                <div class="modal-dialog modal-sm">
                     <div class="modal-content">
 
                         <div class="modal-header">
@@ -49,20 +49,31 @@
                         <div class="modal-body">
 
                             <form action="">
-                                <div class="form-goup">
-                                    <label for="cardName">Name on card:</label>
-                                    <input type="text" name="" id="cardName" placeholder="Name on card, plz">
+                                <div class="form-goup container-fluid">
+                                    <div class="row">
+                                        <label for="cardName">Name on card:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" name="" id="cardName" placeholder="Name on card, plz" class="col-12 ml-auto">
+                                    </div>
                                 </div>
+                                <br>
 
-                                <div class="form-group">
-                                    <label for="cardNumber">Card number:</label>
-                                    <input type="text" name="" id="cardNumber" placeholder="Card number">
+                                <div class="form-group container-fluid">
+                                    <div class="row">
+                                        <label for="cardNumber">Card number:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" name="" id="cardNumber" placeholder="Card number" class="col-12">
+                                    </div>
                                 </div>
                             </form>
 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
 
                         </div>
 
