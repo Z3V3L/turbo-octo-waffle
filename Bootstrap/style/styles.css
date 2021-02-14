@@ -8,3 +8,10 @@ body {
     background-color: pink;
     border: 1px solid blue;
 }
+
+#cajaEspia {
+    position: relative;
+    height: 400px;
+    overflow: auto;
+    border: solid 1px blue;
+}
