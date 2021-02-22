@@ -29,3 +29,69 @@ body {
 .caratulaContent p {
     margin: 10px 0 30px;
 }
+
+#dichoBackground {
+    background-color: #333232;
+}
+
+.loQueLaGenteCuenta {
+    margin: 0 auto;
+    width: 80%;
+    padding: 90px 0 80px 0 ;
+}
+
+.loQueLaGenteCuenta #dicho {
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #d6d6d6;
+}
+
+.loQueLaGenteCuenta #quien {
+    text-align: end;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #757575;
+}
+
+#aboutUs h2, 
+#users h2{
+    text-align: center;
+    padding: 0 0 100px;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#aboutUs {
+    padding: 100px 20px;
+}
+
+#users {
+    background-image: url('../Bootstrap/img/fan.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#users {
+    padding: 100px 70px;
+    color: whitesmoke;
+}
+
+#users img {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: left;
+    padding: 12px 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #313131;
+    color: blanchedalmond;
+}
