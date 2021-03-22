@@ -1,7 +1,7 @@
 <?php
     define( "TITLE", "GET &amp; POST");
 
-    if( isset( $_POST["form_submt"] ) ) {
+    if( isset( $_POST["post_submit"] ) ) {
 
         //Build a function to validate data
         function validateData( $formData ){
@@ -13,7 +13,19 @@
         // create variables with form data
         // wrap the data with our function
 
-        
+        if( !$_POST["post_name"] ){
+            $nameError = "Please enter your name <br>";
+        } else {
+            $name = validateData( $_POST["post_name"] );
+        }
+
+
+        if( !$_POST["post_email"] ){
+            $emailError = "Please enter your email <br>";
+        } else {
+            $email = validateData( $_POST["post_email"] );
+        }
+
 
     }
 ?>
@@ -58,11 +70,25 @@
             <hr>
 
             <h4>Enviado a la página actual</h4>
+
+            <p class="text-danger" >* Campos requeridos</p>
             <form action="<?php echo htmlspecialchars( $_SERVER['PHP_SELF']); ?>" method="post">
+
+                <small class="text-danger">* <?php echo $nameError; ?></small>
                 <input type="text" placeholder="Name" name="post_name" >
+                <small class="text-danger">* <?php echo $emailError; ?></small>
                 <input type="text" placeholder="Email" name="post_email">
                 <input type="submit"name="post_submit">
             </form>
+
+            <?php
+
+                if( isset( $_POST["post_submit"]) ) {
+                    echo "<h4>Your info</h4>";
+                    echo "$name <br> $emali <br>";
+                }
+
+            ?>
 
         <!-- jQuery and Bootstrap Bundle (includes Popper) -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
