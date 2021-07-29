@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<title>03-3D model</title>
-		<style>
-			body { margin: 0; }
-		</style>
-	</head>
-	<body>
-		<!--<script src="js/three.js"></script>-->
-		<script type=module>
-            //import * as THREE from 'three';
-            //import { ColladaLoader } from 'node_modules/three/examples/jsm/loaders/ColladaLoader.js';
-            
-            const renderer = new THREE.WebGLRenderer();
+import './style.css'
+
+document.querySelector('#app').innerHTML = `
+  <h1>Hello Vite!</h1>
+  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
+`
+import * as THREE from 'three';
+//import { ColladaLoader } from 'three';
+
+const renderer = new THREE.WebGLRenderer();
 
             renderer.setSize( window.innerWidth, window.innerHeight );
             document.body.appendChild( renderer.domElement );
@@ -40,13 +33,16 @@
             scene.add( line );
 
 
-            // Import 3D model
-            
-            
+            const loader = new GLTFLoader();
 
+loader.load( 'path/to/model.glb', function ( gltf ) {
+
+	scene.add( gltf.scene );
+
+}, undefined, function ( error ) {
+
+	console.error( error );
+
+} );
 
             renderer.render( scene, camera);
-            
-        </script>
-	</body>
-</html>
