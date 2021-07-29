@@ -8,8 +8,9 @@
 		</style>
 	</head>
 	<body>
-		<script src="js/three.js"></script>
-		<script>
+		<!--<script src="js/three.js"></script>-->
+		<script type=module>
+            import * as THREE from 'https://cdn.skypack.dev/pin/three@v0.130.1-bsY6rEPcA1ZYyZeKdbHd/mode=imports/optimized/three.js'
             const renderer = new THREE.WebGLRenderer();
 
             renderer.setSize( window.innerWidth, window.innerHeight );
