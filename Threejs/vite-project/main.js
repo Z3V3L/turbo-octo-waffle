@@ -35,14 +35,14 @@ const renderer = new THREE.WebGLRenderer();
 
             const loader = new GLTFLoader();
 
-loader.load( 'path/to/model.glb', function ( gltf ) {
+            loader.load( 'path/to/model.glb', function ( gltf ) {
 
-	scene.add( gltf.scene );
+              scene.add( gltf.scene );
 
-}, undefined, function ( error ) {
+            }, undefined, function ( error ) {
 
-	console.error( error );
+              console.error( error );
 
-} );
+            } );
 
             renderer.render( scene, camera);
