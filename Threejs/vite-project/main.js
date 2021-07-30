@@ -5,7 +5,7 @@ document.querySelector('#app').innerHTML = `
   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
 `
 import * as THREE from 'three';
-//import { ColladaLoader } from 'three';
+import { ColladaLoader } from 'three';
 
 const renderer = new THREE.WebGLRenderer();
 
@@ -33,11 +33,11 @@ const renderer = new THREE.WebGLRenderer();
             scene.add( line );
 
 
-            const loader = new GLTFLoader();
+            const loader = new ColladaLoader();
 
-            loader.load( 'path/to/model.glb', function ( gltf ) {
+            loader.load( 'Agumon [17]/Agumon.dae', function ( collada ) {
 
-              scene.add( gltf.scene );
+              scene.add( collada.scene );
 
             }, undefined, function ( error ) {
 
